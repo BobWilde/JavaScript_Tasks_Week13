@@ -1,8 +1,10 @@
 h1{
     font-weight: bold;
     font-family: Arial;
+    text-align: center;
 }
 body{
+    text-align: center;
     font-family: Arial;
     background-color: coral;
     color: maroon;

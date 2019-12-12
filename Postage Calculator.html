@@ -5,7 +5,28 @@
     <meta charset="UTF-8">
     <title>Postage Calculator</title>
     <link rel="stylesheet" type="text/css" href="Postage%20styles.css">
-    <script>src="Script.js"</script>
+
+    <script>
+        function calcCost(){
+            var name = document.getElementById('name').value;
+            var weight = document.getElementById('weight').value;
+            var express = 0;
+
+            if (document.getElementById('express').checked){
+                express=5;
+            }
+
+            if(document.getElementById('r1').checked){
+                document.getElementById('cost').innerHTML= (weight*2)+express
+            }
+            else if(document.getElementById('r2').checked){
+                document.getElementById('cost').innerHTML= (weight*10)+express
+            }
+            else{
+                document.getElementById('cost').innerHTML= (weight*5)+express
+            }
+        }
+    </script>
 
 </head>
 
@@ -22,6 +43,8 @@
     <input type="radio" id="r2" name="rate" value="United States">United States - 10 per kilo<br>
     <input type="radio" id="r3" name="rate" value="Europe">Europe - 5 per kilo<br>
 </form>
-<button onclick="calcCost()">Submit</button>
+<button onclick="calcCost()">Submit</button><br><br>
+Postage Cost:
+<div id='cost'>___</div>
 </body>
 </html>
