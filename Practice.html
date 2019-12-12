@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Name typing</title>
+</head>
+<body>
+<form id="nameForm">
+    <label>Enter Name</label>:<br>
+    <input type="text" id="name"><br>
+    <input type="submit" value="Submit" onclick="displayName()">
+</form>
+<script>
+    function displayName(){
+        var name = document.getElementById("name").value;
+        alert("Hi "+name);
+        document.write("Hello "+name);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Postage Calculator</title>
+    <link rel="stylesheet" type="text/css" href="Postage%20styles.css">
+    <script>src="Script.js"</script>
+
+</head>
+
+<body>
+<h1>Postage Calculator</h1>
+<form>
+    <label>Enter Name</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label>Weight</label>
+    <input type="text" id="weight" name="weight"><br><br>
+    <label>Do You Want Express Delivery?</label>
+    <input type="checkbox" id="express" name="express"><br><br>
+    <input type="radio" id="r1" name="rate" value="United Kingdom" checked="checked">United Kingdom - 2 per kilo<br>
+    <input type="radio" id="r2" name="rate" value="United States">United States - 10 per kilo<br>
+    <input type="radio" id="r3" name="rate" value="Europe">Europe - 5 per kilo<br>
+</form>
+<button onclick="calcCost()">Submit</button>
+</body>
+</html>
